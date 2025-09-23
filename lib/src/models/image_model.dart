@@ -1,12 +1,12 @@
 class ImageModel {
   int id;
-  String url;
+  String thumbnail;
   String title;
 
-  ImageModel(this.id, this.title, this.url);
+  ImageModel(this.id, this.title, this.thumbnail);
 
   ImageModel.fromJson(Map<String, dynamic> parsedJson)
     : id = parsedJson['id'],
       title = parsedJson['title'],
-      url = parsedJson['url'];
+      thumbnail = parsedJson['thumbnail'];
 }
